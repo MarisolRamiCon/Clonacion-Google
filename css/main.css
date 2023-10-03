@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/***********************************
+***********************************
+***********************************/
+
+/*Navegación*/
+header{
+    width: 100%;
+    /*width -- ancho /// height - alto*/
+    height: 60px; 
+}
+
+header nav {
+    display: flex;
+    /* Justificar hacia la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    /*Justificar al centro de 
+    acuerdo al elemento*/
+    justify-content: center;
+    /*Centrando verticalmente*/
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+    
+/*Anclas dentro del nav para agregar espacio*/
+nav .nav-right-section a{
+    color: rgba(0,0,0,.87);
+    margin-right: 20px;
+
+}
+
+/*Icono del menu*/
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Imagen del usuario*/
+nav .nav-right-section img{
+    /*Bordes redondeados*/
+    border-radius: 100%;
+    width: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+/**************************************/
+/*Main*/
+main{
+    margin-top: 150px;
+    /*Centrar los elementos*/
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin-bottom: 40px;
+    /*Vertical // Horizontal*/
+    /*Centrado absoluto gracias a los margenes automaticos*/
+    margin:0 auto;
+}
+
+main .main-logo img{
+    height:120px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 550px;/*modifique esta*/
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+
+}
+
+main .main-input input{
+    height: 35px;
+    border: none;
+    /*outline - quitar contorno al accionar click*/
+    outline: none;
+    width: 450px;
+}
+
+/*Efecto hover (sombra) al poner el mouse sin accionar*/
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    /*0 -> Desplazamiento horizontal
+    1px -> Desplazamiento vertical
+    6px -> desenfoque
+    0 -> expansion de la sombra
+    */
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /*background-size: contain;*/
+    background-position: center;
+    /*propiedad para que no se repita el fondo*/
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 14px;
+    height: 14px;
+    padding-left: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 14px;
+    height: 14px;
+    padding: 10px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto; /*Centrarlo aunque cambie el tamaño de la pantalla*/
+}
+
+main .main-buttons div{
+    /*inline // inline block los pone en una sola linea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 15px;
+    color: #3c4043;
+    border-radius: 4px;
+    /*padding de arriba y abajo ->0
+    padding de izquierda y derecha ->15px*/
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #20212447;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px 3px 0 #20212447;
+    border: 1px solid #dadce0;
+    color:#202124;
+}
+
+/*FOOTER*/
+
+
+footer .Pais{
+    display: flex;
+    justify-content: flex-start; 
+    padding: 1%;
+    margin-left: 2%;
+    margin-top: 8%;
+    color: #70757a
+}
+footer .listas li a{
+    text-decoration: none;
+    color:#70757a;
+}
+
+footer div.listas{
+    display: flex;
+    border-top: 1px solid #20212447;
+}
+
+footer div ul{ 
+    list-style-type: none;
+    display: flex;
+}
+
+footer div ul.Footer_izq{
+    width: 50%;
+}
+
+footer div ul.Footer_der{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li{
+    margin-right: 20px;
+}
