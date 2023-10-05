@@ -12,8 +12,8 @@ body{
 /*Navegación*/
 header{
     width: 100%;
-    /*width -- ancho /// height - alto*/
-    height: 60px; 
+    /*width -- ancho /// height - alto*/ 
+    height: 5%;
 }
 
 header nav {
@@ -23,7 +23,9 @@ header nav {
 }
 
 header nav .nav-right-section{
-    width: 250px;
+    width: 20%;
+    color: #70757a;
+    position: relative;
     height: auto;
     list-style: none;
     display: flex;
@@ -42,14 +44,13 @@ a{
 nav .nav-right-section a{
     color: rgba(0,0,0,.87);
     margin-right: 20px;
-
 }
 
 /*Icono del menu*/
 nav .nav-right-section .menu{
     background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
-    width: 25px;
-    height: 25px;
+    width: 60%;
+    height: 60%;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -58,9 +59,10 @@ nav .nav-right-section .menu{
 nav .nav-right-section img{
     /*Bordes redondeados*/
     border-radius: 100%;
-    width: 30px;
-    margin-left: 20px;
+    width: 40%;
+    margin-left: 1%;
 }
+
 
 
 
@@ -68,46 +70,47 @@ nav .nav-right-section img{
 /**************************************/
 /*Main*/
 main{
-    margin-top: 150px;
+    margin-top: 1%;
     /*Centrar los elementos*/
     text-align: center;
 }
 
 main .main-logo{
-    width: 530px;
-    margin-bottom: 40px;
+    width: 40%;
+    margin-bottom: 1%;
     /*Vertical // Horizontal*/
     /*Centrado absoluto gracias a los margenes automaticos*/
     margin:0 auto;
 }
 
 main .main-logo img{
-    height:120px;
+    width:80%;
 }
 
 main .main-input{
-    width: 530px;
+    width: 45%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
 }
 
 main .main-input-container{
-    width: 550px;/*modifique esta*/
+    width: 100%;/*modifique esta*/
     border: 1px solid #dfe1e5;
     border-radius: 20px;
 
 }
 
 main .main-input input{
+    width: 83%;
     height: 35px;
     border: none;
     /*outline - quitar contorno al accionar click*/
     outline: none;
-    width: 450px;
 }
 
 /*Efecto hover (sombra) al poner el mouse sin accionar*/
 main .main-input-container:hover{
+    background-color: #202124;
     border-color: #dfe1e500;
     /*0 -> Desplazamiento horizontal
     1px -> Desplazamiento vertical
@@ -123,17 +126,16 @@ main .main-input .search-icon{
     background-position: center;
     /*propiedad para que no se repita el fondo*/
     background-repeat: no-repeat;
-    width: 15px;
-    height: 15px;
-    padding-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+    padding-right: 2%;
 }
 
 main .main-input .micro-icon{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
-    width: 14px;
-    height: 14px;
-    padding-left: 10px;
+    width: 50%;
+    height: 50%;
+    padding-left: 5%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,17 +143,17 @@ main .main-input .micro-icon{
 
 main .main-input .cam-icon{
     background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
-    width: 14px;
-    height: 14px;
-    padding: 10px;
+    width: 1%;
+    height: 1%;
+    padding: 2%;
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 main .main-buttons {
-    width: 530px;
+    width: 40%;
     margin: 0 auto; /*Centrarlo aunque cambie el tamaño de la pantalla*/
 }
 
@@ -181,41 +183,42 @@ main .main-buttons button:hover{
 }
 
 /*FOOTER*/
-
-
-footer .Pais{
-    display: flex;
-    justify-content: flex-start; 
-    padding: 1%;
-    margin-left: 2%;
-    margin-top: 8%;
-    color: #70757a
+footer{
+    margin-top: 15%;
 }
-footer .listas li a{
-    text-decoration: none;
-    color:#70757a;
+footer div.Pais{
+    margin-left: 3%;
+    padding: 1%;
+    color: #70757a;
+    font-size: 16px;
+}
+div.listas{
+    border-top: 1px solid #dadce0;
 }
 
 footer div.listas{
     display: flex;
-    border-top: 1px solid #20212447;
+    justify-content: space-between;
 }
 
-footer div ul{ 
-    list-style-type: none;
+footer div ul.Izq{
+    width: 40%;
     display: flex;
+    justify-content: flex-start;
 }
 
-footer div ul.Footer_izq{
-    width: 50%;
-}
-
-footer div ul.Footer_der{
-    width: 50%;
+footer div ul.Der{
+    width: 40%;
     display: flex;
     justify-content: flex-end;
 }
 
-footer li{
-    margin-right: 20px;
+footer div ul li{
+    margin-right: 2%;
+    list-style: none;
+}
+
+footer a{
+    text-decoration-style: none;
+    color: #70757a;
 }
